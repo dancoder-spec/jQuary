@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style>
+        div {
+            background-color: aquamarine;
+            height: 500px;
+            width: 500px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>.</div>
+    <button class="up">slide up</button>
+    <button class="down">slide down</button>
+    <script>
+        $(Document).ready(function() {
+            $(".down").click(function() {
+                $("div").slideDown(2000);
+            })
+            $(".up").click(function() {
+                $("div").slideUp(2000);
+            })
+
+        })
+    </script>
+
+</body>
+
+</html>

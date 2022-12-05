@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style>
+        div {
+            background-color: black;
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dolorum, quis quo sint, iusto esse corporis optio doloremque saepe deserunt illum, doloribus molestias! Deserunt saepe maxime natus officia quia. Asperiores. Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit. Quia vel omnis, eum distinctio dolorem explicabo? Nesciunt, eligendi quos quod incidunt nisi rerum distinctio, numquam natus tempora, iusto nemo asperiores quae.
+    </div>
+    <button class="hide">hide</button>
+    <button class="show">show</button>
+    <script>
+        $(Document).ready(function() {
+            $(".hide").click(function() {
+                $("div").hide(2000);
+            })
+            $(".show").click(function() {
+                $("div").show(10000);
+            })
+        })
+    </script>
+</body>
+
+</html>
